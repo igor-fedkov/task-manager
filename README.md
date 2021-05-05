@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Описание проекта
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Приложение состоит из трех страниц: страница аутентификации, страница досок проектов и страница выбранной доски. 
+При первом запуске программы или после удаления данных с localStorage первоначальные данные будут загружены автоматически.
 
-## Available Scripts
+# Описание функционала
 
-In the project directory, you can run:
+В проекте поддерживается маршрутизация, что позволяет переходить непосредственно на нужную доску, если пользователь ранее прошел аутентификацию. Приложение поддерживает публичные и приватные маршруты, т.е. аутентифицированный пользователь при попытке зайти на страницу для ввода логина и пароля - будет переадресован на страницу с досками проектов. И наоборот, не аутентифицированный будет переадресовываться на страницу аутентификации. Все данные сохраняются в локальное хранилище localStorage.
+При загрузке данных по умолчанию, дата и время событий будут сгенерированы случайным образом с разбросом до года. При этом могут возникнуть такие моменты, когда карточка будет "создана" ранее списка, в котором она находится и раньше доски. Все созданные пользователем события будут сохраняться реальной датой.
+Для выхода из системы, пользователь подводит мышку к пользовательскому меню (сверху справа) и в выпадающем меню выбирает выход.
+Удаление доски доступно только тому пользователю, который создал эту доску.
+Удаление списка может выполнить или пользователь, который создал этот список или пользователь, который создал доску.
+Удаление карточки доступно: владельцу карточки; владельцу списка, в котором на данный момент находится карточка или владельцу доски.
+Активность логируется при выполнении следующих действий: 
+- добавление карточки;
+- удаление карточки;
+- добавление комментария в конкретную карточку;
+- редактирование описания карточки;
+- перенос карточки из одного списка в другой;
+- удаление списка;
+- переименование списка;
+- создание доски;
+- удаление доски;
+Для ускорения загрузки, приложение разбито на части по страницам, каждая страница загружается отдельно.
+Данные для начальной загрузки находятся в src\redux\db.json
 
-### `npm start`
+# Сборка и запуск
+Для запуска клонированного с GitHub проекта нужно установить зависимости:
+npm install
+после чего запустить проект:
+npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+или перейти по ссылке: https://if-task-manager.netlify.app
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+В системе есть 3 пользователя:
+- user@mail.com, пароль: user;
+- test@mail.com, пароль: test;
+- admin@mail.com, пароль: admin;
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

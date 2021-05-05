@@ -3,7 +3,6 @@ import  createObjAction from '../../utils/createObjAction';
 import  actionsTypes from '../../actions-types';
 
 const addBoard = board => dispatch => {
-  dispatch(boardsActions.addBoardSuccess(board));
 
   const action = createObjAction({
     userId: board.owner,
@@ -12,6 +11,11 @@ const addBoard = board => dispatch => {
     inicial: board.inicial,
   });
 
+  if (board.inicial) {
+    board.inicial = null;
+  }    
+  
+  dispatch(boardsActions.addBoardSuccess(board));
   dispatch(actionsActions.addActionSuccess(action));
 }
 

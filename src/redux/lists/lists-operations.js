@@ -3,7 +3,6 @@ import  createObjAction from '../../utils/createObjAction';
 import  actionsTypes from '../../actions-types';
 
 const addList = list => dispatch => {
-  dispatch(listsActions.addListSuccess(list));
 
   const action = createObjAction({
     userId: list.owner,
@@ -12,6 +11,11 @@ const addList = list => dispatch => {
     inicial: list.inicial,
   });
 
+  if (list.inicial) {
+    list.inicial = null;
+  } 
+
+  dispatch(listsActions.addListSuccess(list));
   dispatch(actionsActions.addActionSuccess(action));
 }
 

@@ -2,41 +2,38 @@
   "users": [
     {
       "id": "u1",
-      "email": "u1@mail.com",
-      "password": "u1"
+      "email": "user@mail.com",
+      "password": "user"
     },
     {
       "id": "u2",
-      "email": "u2@mail.com",
-      "password": "u2"
+      "email": "test@mail.com",
+      "password": "test"
     },
     {
       "id": "u3",
-      "email": "u3@mail.com",
-      "password": "u3"
+      "email": "admin@mail.com",
+      "password": "admin"
     }
   ],
   "boards": [
     {
       "id": "b1",
-      "title": "Project 1111",
-      "date": "",
+      "title": "Project 1",
       "owner": "u1",
       "inicial": true,
       "active": true
     },
     {
       "id": "b2",
-      "title": "Project 2222",
-      "date": "",
+      "title": "Project 2",
       "owner": "u2",
       "inicial": true,
       "active": true
     },
     {
       "id": "b3",
-      "title": "Project 3333",
-      "date": "",
+      "title": "Project 3",
       "owner": "u3",
       "inicial": true,
       "active": true
@@ -44,134 +41,290 @@
   ],
   "lists": [
     {
-      "id": "l1",
+      "id": "l11",
       "boardId": "b1",
       "title": "List 1",
-      "date": "",
       "owner": "u1",
       "inicial": true,
       "active": true
     },
     {
-      "id": "l2",
+      "id": "l12",
       "boardId": "b1",
       "title": "List 2",
-      "date": "",
       "owner": "u2",
       "inicial": true,
       "active": true
     },
     {
-      "id": "l3",
-      "boardId": "b3",
+      "id": "l13",
+      "boardId": "b1",
       "title": "List 3",
-      "date": "",
       "owner": "u3",
       "inicial": true,
       "active": true
     },
     {
-      "id": "l4",
-      "boardId": "b1",
-      "title": "List 4",
-      "date": "",
+      "id": "l21",
+      "boardId": "b2",
+      "title": "List 1",
       "owner": "u1",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "l22",
+      "boardId": "b2",
+      "title": "List 2",
+      "owner": "u2",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "l23",
+      "boardId": "b2",
+      "title": "List 3",
+      "owner": "u3",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "l31",
+      "boardId": "b3",
+      "title": "List 1",
+      "owner": "u1",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "l32",
+      "boardId": "b3",
+      "title": "List 2",
+      "owner": "u2",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "l33",
+      "boardId": "b3",
+      "title": "List 3",
+      "owner": "u3",
       "inicial": true,
       "active": true
     }
   ],
   "cards": [
     {
-      "id": "c11",
-      "listId": "l1",
+      "id": "c111",
+      "listId": "l11",
       "title": "Card 1",
       "owner": "u1",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c12",
-      "listId": "l1",
+      "id": "c112",
+      "listId": "l11",
       "title": "Card 2",
       "owner": "u2",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c13",
-      "listId": "l1",
+      "id": "c113",
+      "listId": "l11",
       "title": "Card 3",
       "owner": "u3",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c21",
-      "listId": "l2",
+      "id": "c121",
+      "listId": "l12",
       "title": "Card 1",
       "owner": "u1",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c22",
-      "listId": "l2",
+      "id": "c122",
+      "listId": "l12",
       "title": "Card 2",
       "owner": "u2",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c23",
-      "listId": "l2",
+      "id": "c123",
+      "listId": "l12",
       "title": "Card 3",
       "owner": "u3",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c31",
-      "listId": "l3",
+      "id": "c131",
+      "listId": "l13",
       "title": "Card 1",
       "owner": "u1",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c32",
-      "listId": "l3",
+      "id": "c132",
+      "listId": "l13",
       "title": "Card 2",
       "owner": "u2",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c33",
-      "listId": "l3",
+      "id": "c133",
+      "listId": "l13",
       "title": "Card 3",
       "owner": "u3",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c41",
-      "listId": "l4",
+      "id": "c211",
+      "listId": "l21",
       "title": "Card 1",
       "owner": "u1",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c42",
-      "listId": "l4",
+      "id": "c212",
+      "listId": "l21",
       "title": "Card 2",
       "owner": "u2",
       "inicial": true,
       "active": true
     },
     {
-      "id": "c43",
-      "listId": "l4",
+      "id": "c213",
+      "listId": "l21",
+      "title": "Card 3",
+      "owner": "u3",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c221",
+      "listId": "l22",
+      "title": "Card 1",
+      "owner": "u1",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c222",
+      "listId": "l22",
+      "title": "Card 2",
+      "owner": "u2",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c223",
+      "listId": "l22",
+      "title": "Card 3",
+      "owner": "u3",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c231",
+      "listId": "l23",
+      "title": "Card 1",
+      "owner": "u1",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c232",
+      "listId": "l23",
+      "title": "Card 2",
+      "owner": "u2",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c233",
+      "listId": "l23",
+      "title": "Card 3",
+      "owner": "u3",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c311",
+      "listId": "l31",
+      "title": "Card 1",
+      "owner": "u1",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c312",
+      "listId": "l31",
+      "title": "Card 2",
+      "owner": "u2",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c313",
+      "listId": "l31",
+      "title": "Card 3",
+      "owner": "u3",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c321",
+      "listId": "l32",
+      "title": "Card 1",
+      "owner": "u1",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c322",
+      "listId": "l32",
+      "title": "Card 2",
+      "owner": "u2",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c323",
+      "listId": "l32",
+      "title": "Card 3",
+      "owner": "u3",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c331",
+      "listId": "l33",
+      "title": "Card 1",
+      "owner": "u1",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c332",
+      "listId": "l33",
+      "title": "Card 2",
+      "owner": "u2",
+      "inicial": true,
+      "active": true
+    },
+    {
+      "id": "c333",
+      "listId": "l33",
       "title": "Card 3",
       "owner": "u3",
       "inicial": true,

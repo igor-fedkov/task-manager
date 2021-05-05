@@ -3,8 +3,7 @@ import  createObjAction from '../../utils/createObjAction';
 import actionsTypes from '../../actions-types';
 
 const addCard = card => dispatch => {
-  dispatch(cardsActions.addCardSuccess(card));
-
+  
   const action = createObjAction({
     userId: card.owner,
     actionType: actionsTypes.add,
@@ -13,6 +12,11 @@ const addCard = card => dispatch => {
     inicial: card.inicial,
   });
 
+  if (card.inicial) {
+    card.inicial = null;
+  } 
+
+  dispatch(cardsActions.addCardSuccess(card));
   dispatch(actionsActions.addActionSuccess(action));
 };
 
