@@ -174,22 +174,6 @@ function CardsList({
             </button>
           </li>
 
-          // <li
-          //   onDrag={onDrag}
-          //   onDragStart={(e) => onDragStart(e, id)}
-            
-          //   key={id}
-          //   className={s.cardsListItem}
-          //   draggable={true}>
-          //   <p className={s.cardTitle}>{title}</p>
-          //   <Button
-          //     onClick={() => onCardDetailsClick(id)}
-          //     className={s.btnOpenCard}
-          //     variant="link"
-          //     size="sm">
-          //     <span className="material-icons">edit</span>
-          //   </Button>
-          // </li>
         )}
       </ul>
 

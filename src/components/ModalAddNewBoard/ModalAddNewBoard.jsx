@@ -27,27 +27,6 @@ function ModalAddNewBoard({ isModalShow, onModalClose, onSubmitForm }) {
         </Form>
       </Modal.Body>
     </Modal>
-
-
-    // <Modal.Dialog>
-    //   <Modal.Header closeButton>
-    //     <Modal.Title>Add New board</Modal.Title>
-    //   </Modal.Header>
-
-    //   <InputGroup className="mb-3">
-    //     <FormControl
-    //       placeholder="Board's Title"
-    //       aria-label="Board's Title"
-    //       aria-describedby="basic-addon2"
-    //     />
-    //   </InputGroup>
-
-
-    //   <Modal.Footer>
-    //     <Button variant="secondary">Close</Button>
-    //     <Button variant="primary">Save changes</Button>
-    //   </Modal.Footer>
-    // </Modal.Dialog>
   )
 }
 

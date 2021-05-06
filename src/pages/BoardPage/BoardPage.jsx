@@ -139,10 +139,8 @@ function BoardPage() {
             </CSSTransition>
           )}
 
-          {/* {!isAddListShow && */}
           {isAddListShow 
             ? <CSSTransition
-              // key=""
               timeout={200}
               appear={true}
               classNames={scaleTransition}
@@ -154,7 +152,6 @@ function BoardPage() {
             </CSSTransition>
 
             : <CSSTransition
-                // key="btn add new list"
                 timeout={200}
                 appear={true}
                 classNames={slideTransitions}
