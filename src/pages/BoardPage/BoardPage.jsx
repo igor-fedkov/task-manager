@@ -161,8 +161,8 @@ function BoardPage() {
                 <Button
                   onClick={onToggleAddList}
                   className={s.btnCreateList}
-                  variant="link"
-                  size="sm">
+                  variant="primary"
+                  block>
                   Add a list...
                 </Button>
               </li>
@@ -175,9 +175,6 @@ function BoardPage() {
         isModalShow={isCardDetailsShow}
         onModalClose={onToggleCardDetailsShow}
       />
-
-      {/* <ModalBoardMenu /> */}
-
     </div>
   )
 }
